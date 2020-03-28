@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Ian Bondoc CV</title>
-    <meta name="viewport" content="minimal-ui">
     <style>
     html {
       height: 100%;
@@ -22,7 +21,9 @@ if (
   /* iOS hides Safari address bar */
   window.addEventListener('load', function() {
       console.log('scrolling...');
-      window.scrollTo(0, 1);
+      setTimeout(function () {
+        window.scrollTo(0, 1);
+      }, 1000);
   });
 } else {
   console.log('not iphone');
