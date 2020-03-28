@@ -20,15 +20,13 @@ if (
   navigator.userAgent.match(/iPhone/i) ||
   navigator.userAgent.match(/iPad/i)
 ) {
-  alert('iphone!');
+  console.log('iphone!');
   /* iOS hides Safari address bar */
   window.addEventListener('load', function() {
-    setTimeout(function() {
       window.scrollTo(0, 1);
-    }, 1000);
   });
 } else {
-  alert('not iphone');
+  console.log('not iphone');
 }
 </script>
   </body>
