@@ -22,7 +22,7 @@ if (
   window.addEventListener('load', function() {
       setTimeout(function () {
         console.log('scrolling...');
-        window.scrollTo(0, 1);
+        document.getElementById('b').scrollTo(0, 1);
       }, 1000);
   });
 } else {
@@ -30,7 +30,7 @@ if (
 }
 </script>
   </head>
-  <body>
+  <body id="b">
     <p>hello</p>
   </body>
 </html>
