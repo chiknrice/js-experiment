@@ -18,7 +18,7 @@
   window.addEventListener('load', function() {
       const ios = navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i);
       console.log(ios);
-      alert(navigator.platform);
+      alert(`[${!!navigator.platform}] [${navigator.platform}] [${/iPad|iPhone|iPod/.test(navigator.platform)}]`);
       //alert(ios ? 'ios!' : 'not ios!');
   });
 </script>
