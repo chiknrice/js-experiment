@@ -15,22 +15,11 @@
     }
     </style>
     <script>
-/* iOS re-orientation fix */
-if (
-  navigator.userAgent.match(/iPhone/i) ||
-  navigator.userAgent.match(/iPad/i)
-) {
-  console.log('iphone!');
-  /* iOS hides Safari address bar */
   window.addEventListener('load', function() {
-      setTimeout(function () {
-        console.log('scrolling');
-        window.scrollTo(0, 100);
-      }, 1000);
+      const ios = window.matchMedia('(-webkit-touch-callout: none)');
+      console.log(ios.matches);
+      alert(ios.matches ? 'ios!' : 'not ios!');
   });
-} else {
-  console.log('not iphone');
-}
 </script>
   </head>
   <body id="b">
